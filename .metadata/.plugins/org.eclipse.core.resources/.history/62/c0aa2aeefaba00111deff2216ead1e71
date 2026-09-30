@@ -1,0 +1,5 @@
+package com.minibank.service;
+
+public class TransactionService {
+
+}

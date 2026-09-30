@@ -1,0 +1,14 @@
+package com.minibank.service;
+
+import com.minibank.dao.minibankDao;
+import com.minibank.model.Account;
+
+public class Service {
+	
+	minibankDao dao=new minibankDao();
+	
+	public void create() throws Exception{
+		dao.createaccount();
+	}
+
+}
