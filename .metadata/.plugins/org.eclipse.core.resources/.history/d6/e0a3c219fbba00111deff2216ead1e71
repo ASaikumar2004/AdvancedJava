@@ -1,5 +1,0 @@
-package com.minibank.dao;
-
-public class BankTransactionDao {
-
-}
