@@ -853,3 +853,4 @@ Caused by: org.eclipse.emf.ecore.xmi.PackageNotFoundException: Package with uri 
 2026-10-30 11:28:50,449 [Worker-92: Launching Main (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\AdvancedJava\SpringCore\src\test\resources
 2026-10-30 11:35:16,170 [Worker-99: Launching Main (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2026-10-30 11:35:16,177 [Worker-99: Launching Main (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\AdvancedJava\SpringCore\src\test\resources
+2026-10-31 09:38:36,384 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
