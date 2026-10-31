@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 import com.sms.model.Student;
 import com.sms.util.DBConnection;
-import com.sun.tools.javac.util.List;
 
 public class StudentDAO {
 

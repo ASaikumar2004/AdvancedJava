@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Doctor bean configuration -->
+	<import resource="doctorbeans.xml" />
+
+	<!-- Singleton Patient -->
+	<bean id="patient" class="com.codegnan.hms.Patient"
+		scope="singleton">
+
+		<property name="pid" value="501" />
+		<property name="pname" value="Ravi Kumar" />
+		<property name="age" value="35" />
+		<property name="pno" value="9876543210" />
+
+		<property name="doctor" ref="doctor" />
+
+		<property name="medicine">
+			<list>
+				<value>Paracetamol</value>
+				<value>Vitamin C</value>
+				<value>Aspirin</value>
+			</list>
+		</property>
+
+		<property name="medicaltest">
+			<set>
+				<value>Blood Test</value>
+				<value>ECG</value>
+				<value>X-Ray</value>
+			</set>
+		</property>
+
+		<property name="testfees">
+			<map>
+				<entry key="Blood Test" value="500" />
+				<entry key="ECG" value="1000" />
+				<entry key="X-Ray" value="1500" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- Prototype Patient -->
+	<bean id="prototypePatient" class="com.codegnan.hms.Patient"
+		scope="prototype">
+
+		<property name="pid" value="501" />
+		<property name="pname" value="Ravi Kumar" />
+		<property name="age" value="35" />
+		<property name="pno" value="9876543210" />
+
+		<property name="doctor" ref="doctor" />
+
+		<property name="medicine">
+			<list>
+				<value>Paracetamol</value>
+				<value>Vitamin C</value>
+				<value>Aspirin</value>
+			</list>
+		</property>
+
+		<property name="medicaltest">
+			<set>
+				<value>Blood Test</value>
+				<value>ECG</value>
+				<value>X-Ray</value>
+			</set>
+		</property>
+
+		<property name="testfees">
+			<map>
+				<entry key="Blood Test" value="500" />
+				<entry key="ECG" value="1000" />
+				<entry key="X-Ray" value="1500" />
+			</map>
+		</property>
+	</bean>
+
+</beans>
